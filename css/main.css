@@ -53,9 +53,8 @@ header, footer{
 
 footer{
 	position: absolute;
-	right: 0;
+	width: 100%;
 	bottom: 0;
-	left: 0;
 	text-align: center;
 }
 
@@ -101,6 +100,7 @@ main{
 	margin: 0 15px 15px;
 	text-align: right;
 	font-size: 0;
+	height: 500px;
 }
 
 .product-img{
@@ -109,12 +109,12 @@ main{
 
 .product-details{
 	margin: 15px 20px;
-	height: 180px;
+	height: 208px;
 	text-align: center;
 }
 
 .product-description{
-	max-height: 100px;
+	height: 135px;
 	overflow: auto;
 	font-size: 14px;
 	text-align: left;
@@ -122,7 +122,7 @@ main{
 }
 
 .product-name{
-	max-height: 40px;
+	max-height: 45px;
 	overflow: auto;
 	font-size: 18px;
 	font-weight: bold;
@@ -204,6 +204,18 @@ hr{
 	
 	.product-tile{
 		width: 45%;
+	}
+
+	.product-details{
+		height: 180px;
+	}
+
+	.product-description{
+		max-height: 100px;
+	}
+
+	.product-name{
+		height: 40px;
 	}
 }
 
