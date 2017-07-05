@@ -166,7 +166,7 @@ main{
 	vertical-align: top;
 	padding: 0 40px 0 15px;
 	font-size: 14px;
-	margin-right: -20px;
+	margin:0 -20px 0 15px;
 }
 
 .searchbar::clear {
