@@ -10,8 +10,34 @@ body{
 	font-family: PT Sans;
 }
 
-button:focus {
+button{
 	outline: 0;
+}
+
+input[type=text]::-ms-clear{
+	display: none; width : 0; height: 0;
+}
+
+input[type=text]::-ms-reveal{
+	display: none; width : 0; height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration{
+	display: none;
+}
+
+.primary-btn{
+	width: 120px;
+	height: 35px;
+	background-image: linear-gradient(to top, #278473 0%, #3fc6cc 100%);
+	color: #FFFFFF;
+	border-radius: 5px;
+	font-size: 14px;
+	border:none;
+	padding: 0;
 }
 
 p{
@@ -114,20 +140,56 @@ main{
 	color: #016501;
 }
 
-.product-tile button{
-	width: 120px;
-	height: 35px;
-	background-image: linear-gradient(to top, #278473 0%, #3fc6cc 100%);
-	color: #FFFFFF;
-	border-radius: 5px;
+.product-tile .primary-btn{
 	margin: 0 20px 20px 0;
-	font-size: 14px;
-	border:none;
-	padding: 0;
 }
 
-.product-tile button:active{
+.primary-btn:active{
 	background-image: linear-gradient(to top, #3fc6cc 0%, #278473 100%);
+}
+
+.filters-container{
+	text-align: right;
+	padding: 0 15px;
+}
+
+.filters-container .primary-button{
+	vertical-align: top;
+}
+
+.searchbar{
+	height: 35px;
+	width: 230px;
+	border-radius: 5px;
+	border: none;
+	outline: 0;
+	vertical-align: top;
+	padding: 0 40px 0 15px;
+	font-size: 14px;
+	margin-right: -20px;
+}
+
+.searchbar::clear {
+    display: none;
+}
+
+.searchbar::placeholder{
+	font-style: italic;
+	font-family: PT Sans;
+}
+
+.search-icon{
+	content: url('../images/search-icon.png');
+    cursor: pointer;
+}
+
+.search-button{
+    position: relative;
+    right: 15px;
+    background: none;
+    border: none;
+    padding: 0;
+    vertical-align: middle;
 }
 
 hr{
