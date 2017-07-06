@@ -23,14 +23,33 @@
 					<div class="filters-box">
 						<i class="tooltip-triangle"></i>
 						<div class="filters">
-							<input type="checkbox" class="checkbox" id="checkbox" />
-							<label for="checkbox">Я переключаю чекбокс</label>
-							<input type="radio" class="radio" name="gender" value="male" id="male">
-							<label for="male">gender</label>
-							<input type="radio" name="gender" class="radio" value="female" id="female">
-							<label for="female">female</label>
-							<input type="radio" name="gender" class="radio" value="other" id="other">
-							<label for="other">other</label>
+							<div class="product-params-filter">
+								<div class="availability-filter filter">
+									<span class="filter-title">Availability:</span><br>
+									<input type="checkbox" class="checkbox" id="checkbox" />
+									<label for="checkbox">Available only</label>
+								</div>
+								<div class="gender-filter filter">
+									<span class="filter-title">Gender:</span><br>
+									<input type="radio" class="radio" name="gender" value="male" id="male">
+									<label for="male">Man</label>
+									<input type="radio" name="gender" class="radio" value="female" id="female">
+									<label for="female">Woman</label>
+									<input type="radio" name="gender" class="radio" value="other" id="other">
+									<label for="other">Unisex</label>
+								</div>
+								<div class="category-filter filter">
+									<span class="filter-title">Category:</span><br>
+									<select class="select-list">
+										<option value="jeans">Jeans</option>
+										<option value="shirts">Shirts</option>
+										<option value="shoes">Shoes</option>
+										<option value="accessories">Accessories</option>
+									</select>
+								</div>
+							</div>
+							<div class="product-price-filter">
+							</div>
 						</div>
 					</div>
 				</button>
