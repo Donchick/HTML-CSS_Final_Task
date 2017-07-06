@@ -52,7 +52,7 @@ main{
 }
 
 .header-menu{
-	max-width: 1030px;
+	max-width: 1200px;
 	margin: 0 auto;
 	height: 100%;
 	text-align: right;
@@ -185,8 +185,12 @@ hr{
 }
 
 @media (max-width: 1000px) {
-	main, .header-menu{
+	main{
 		max-width: 780px;
+	}
+
+	.header-menu{
+		max-width: 840px;
 	}
 	
 	.product-tile{
@@ -207,8 +211,12 @@ hr{
 }
 
 @media (max-width: 800px) {
-	main, .header-menu{
+	main{
 		max-width: 480px;
+	}
+
+	.header-menu{
+		max-width: 540px;
 	}
 	
 	.product-tile{
