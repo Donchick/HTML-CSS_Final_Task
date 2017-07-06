@@ -2,11 +2,13 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
+	 	<link rel="stylesheet" href="./libraries/nouislider.min.css">
 		<link rel="stylesheet" href="./css/main.css">
 		<link rel="stylesheet" href="./css/components-styles/checkbox-styles.css">
 		<link rel="stylesheet" href="./css/components-styles/radiobuttons-styles.css">
 		<link rel="stylesheet" href="./css/components-styles/buttons-styles.css">
 		<!--<link rel="stylesheet" href="./css/reset_css.css">-->
+  		<script src="./libraries/nouislider.min.js"></script> 
 	</head>
 	<body>
 		<header>
@@ -48,7 +50,15 @@
 									</select>
 								</div>
 							</div>
-							<div class="product-price-filter">
+							<div class="product-range-filters">
+								<div class="rating-filter filter">
+									<span class="filter-title">Rating:</span><br>
+									<div id="ratingSlider" class="slider rating-slider"></div>
+								</div>
+								<div class="price-filter filter">	
+									<span class="filter-title filter">Price:</span><br>
+									<div id="priceSlider" class="slider price-slider"></div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -159,4 +169,46 @@
 			Copyright “Demo Shop”, 2017
 		</footer>
 	</body>
+	<script>
+		var ratingSlider = document.getElementById('ratingSlider');
+		var priceSlider = document.getElementById('priceSlider');
+
+		noUiSlider.create(ratingSlider, {
+			start: [0, 5],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 5
+			},
+			step: 1,
+			tooltips: true,
+			format: {
+				to: function ( value ) {
+					return value;
+				},
+				from: function ( value ) {
+					return value;
+				}
+			}
+		});
+
+		noUiSlider.create(priceSlider, {
+			start: [0, 1000],
+			connect: true,
+			range: {
+				'min': 0,
+				'max': 1000
+			},
+			step: 1,
+			tooltips: true,
+			format: {
+				to: function ( value ) {
+					return Math.floor(value);
+				},
+				from: function ( value ) {
+					return Math.floor(value);
+				}
+			}
+		});
+	</script>
 </html>

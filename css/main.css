@@ -282,7 +282,7 @@ hr{
 	width: 33.33%;
 }
 
-.product-price-filter{
+.product-range-filters{
 	width: 100%;
 	height: 64px;
 }	
@@ -325,4 +325,59 @@ hr{
     background-image: url(../images/white-select-link.png);
     background-repeat: no-repeat;
     background-position: 95% 50%;
+}
+
+.product-price-filter{
+	padding-top: 17px;
+}
+
+.product-range-filters{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.product-range-filters .filter{
+	margin-right: 19px;
+}
+
+.rating-filter{
+	width: 195px;
+}
+
+.price-filter{
+	width: 495px;
+}
+
+.slider{
+	height: 2px !important;
+	border: none;
+	background: #909090;
+}
+
+.noUi-handle.noUi-handle-lower:before,
+.noUi-handle.noUi-handle-lower:after,
+.noUi-handle.noUi-handle-upper:before,
+.noUi-handle.noUi-handle-upper:after{
+	display: none;
+}
+
+.slider .noUi-handle.noUi-handle-lower,
+.slider .noUi-handle.noUi-handle-upper{
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	background: #2e8879;
+	box-shadow: none;;
+	outline: 0;
+	top: -8px;
+	left: 0;
+	border: none;
+}
+
+.slider .noUi-handle.noUi-handle-lower .noUi-tooltip,
+.slider .noUi-handle.noUi-handle-upper .noUi-tooltip{
+	top: 19px;
+    background: none;
+    border: none;
 }
