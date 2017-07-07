@@ -9,6 +9,7 @@
   line-height: 26px;
   position: relative;
   padding-left: 30px;
+  padding-right: 10px;
   color: #000000;
   vertical-align: middle;
 }
@@ -40,6 +41,7 @@
 .radio:checked + label {
   color: #2e8879;
 }
+
 .radio:checked + label:after {
   opacity: 1;
 }
