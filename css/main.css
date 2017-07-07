@@ -18,6 +18,10 @@ input[type=text]::-ms-reveal{
 	display: none; width : 0; height: 0;
 }
 
+input[type="search"]{
+	-webkit-appearance: textfield;
+}
+
 input[type="search"]::-webkit-search-decoration,
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-button,
@@ -91,10 +95,41 @@ main{
 	font-size: 0;
 	margin-bottom: 30px;
 	width: calc(33.33% - 20px);
+	position: relative;
 }
 
 .product-img{
+	position: relative;
+}
+
+.product-img img{
 	width: 100%;
+}
+
+.product-img .product-rating{
+	position: absolute;
+	bottom: 0;
+	padding-left: 15px;
+	width: calc(100% - 15px);
+	background: rgba(0, 0, 0, 0.7);
+	height: 30px;
+	text-align: left;
+}
+
+
+.gold-star{
+	content: url('../images/gold-star.png');
+	width: 16px;
+	height: 16px;
+	margin: 0 2px;
+    margin: 7px 2px;
+}
+
+.star{
+	content: url('../images/star.png');
+	width: 16px;
+	height: 16px;
+    margin: 7px 2px;
 }
 
 .product-details{
@@ -122,22 +157,27 @@ main{
 .product-price{
 	font-size: 24px;
 	font-weight: bold;
-	float: left;
-	margin: 3px 0 0 20px;
+	position: absolute;
+	bottom: 20px;
+	left: 20px;
 }
 
 .product-price .currency{
 	color: #016501;
 }
 
-.product-tile .primary-btn{
-	margin: 0 20px 20px 0;
+.product-tile .show-more{
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
 }
 
 .filters-container{
 	text-align: right;
 	padding: 20px 0;
 	position: relative;
+    vertical-align: middle;
+    line-height: 35px;
 }
 
 .filters-container .primary-button{
@@ -219,6 +259,7 @@ hr{
     max-width: 790px;
     box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    line-height: normal;
 }
 
 .filters-btn:hover + .filters-box,
@@ -382,6 +423,10 @@ hr{
 
 	.header-menu{
 		max-width: 540px;
+	}
+
+	.product-description{
+		max-height: 50px;
 	}
 	
 	.product-tile{
