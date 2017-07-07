@@ -183,52 +183,6 @@ hr{
 	margin: 0;
 }
 
-@media (max-width: 1000px) {
-	main{
-		max-width: 780px;
-	}
-
-	.header-menu{
-		max-width: 840px;
-	}
-	
-	.product-tile{
-		width: calc(50% - 15px);
-	}
-
-	.product-details{
-		height: 180px;
-	}
-
-	.product-description{
-		max-height: 100px;
-	}
-
-	.product-name{
-		height: 40px;
-	}
-}
-
-@media (max-width: 800px) {
-	main{
-		max-width: 480px;
-	}
-
-	.header-menu{
-		max-width: 540px;
-	}
-	
-	.product-tile{
-		width: 100%;
-		display: block;
-		height: auto;
-	}
-
-	.filters-btn{
-		float: left;
-	}
-}
-
 .filters-btn{
 	position: relative;
 }
@@ -252,17 +206,19 @@ hr{
 
 
 .filters-btn + .filters-box {
-    visibility: visible;
+    visibility: hidden;
     text-align: center;
     position: absolute;
     z-index: 1;
-    opacity: 1;
+    opacity: 0;
     right: 0;
     top: 55px;
     transition: opacity 1s;
     padding-top: 10px;
     width: 100%;
     max-width: 790px;
+    box-shadow: 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
 }
 
 .filters-btn:hover + .filters-box,
@@ -391,4 +347,90 @@ hr{
 	top: 19px;
     background: none;
     border: none;
+}
+
+@media (max-width: 1000px) {
+	main{
+		max-width: 780px;
+	}
+
+	.header-menu{
+		max-width: 840px;
+	}
+	
+	.product-tile{
+		width: calc(50% - 15px);
+	}
+
+	.product-details{
+		height: 180px;
+	}
+
+	.product-description{
+		max-height: 100px;
+	}
+
+	.product-name{
+		height: 40px;
+	}
+}
+
+@media (max-width: 800px) {
+	main{
+		max-width: 480px;
+	}
+
+	.header-menu{
+		max-width: 540px;
+	}
+	
+	.product-tile{
+		width: 100%;
+		display: block;
+		height: auto;
+	}
+
+	.filters-btn{
+		float: left;
+	}
+
+	.product-params-filter{
+		height: auto;
+		border: none;
+	}
+
+	.product-params-filter .filter,
+	.product-range-filters .filter{
+		display: block;
+		width: 100%;
+		height: 70px;
+		padding-top: 15px;
+		border-bottom: 1px solid #2e8879;
+	}
+
+	.product-range-filters .filter:last-child{
+		border: none;
+	}
+
+	.category-filter .select-list{
+		max-width: 237px;
+	}
+
+	.product-range-filters{
+		display: block;
+		height: auto;
+	}
+
+	.product-range-filters .rating-filter .slider{
+		max-width: 237px;
+	}
+
+	.product-range-filters .price-filter .slider{
+    	max-width: 420px;
+    	margin-right: 19px;
+	}
+
+	.tooltip-triangle{
+		left: 50px;
+	}
 }
