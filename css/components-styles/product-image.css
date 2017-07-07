@@ -18,9 +18,10 @@
 
 
 .gold-star{
-	content: url('../../images/gold-star.png');
-	width: 16px;
-	height: 16px;
+    background: url(../../images/gold-star.png);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
 	margin: 0 2px;
     margin: 7px 2px;
 }
