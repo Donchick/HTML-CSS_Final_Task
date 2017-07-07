@@ -238,7 +238,6 @@ hr{
 }
 
 .filters{
-    width: 750px;
     background-color: #fff;
     border-radius: 15px;
     padding: 20px;
@@ -262,6 +261,8 @@ hr{
     top: 55px;
     transition: opacity 1s;
     padding-top: 10px;
+    width: 100%;
+    max-width: 790px;
 }
 
 .filters-btn:hover + .filters-box,
@@ -279,7 +280,18 @@ hr{
 
 .product-params-filter .filter{
 	display: inline-block;
-	width: 33.33%;
+}
+
+.availability-filter{
+	width: 25%;
+}
+
+.gender-filter{
+	width: 40%;
+}
+
+.category-filter{
+	width: 35%;
 }
 
 .filter{
@@ -306,7 +318,7 @@ hr{
 }
 
 .select-list{
-    width: 230px;
+    width: 100%;
     height: 35px;
     background: #2e8879;
     color: #ffffff;
@@ -340,11 +352,11 @@ hr{
 }
 
 .rating-filter{
-	width: 195px;
+	width: 25%;
 }
 
 .price-filter{
-	width: 495px;
+	width: 65%;
 }
 
 .slider{
