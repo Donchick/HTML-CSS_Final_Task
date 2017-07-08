@@ -86,9 +86,12 @@
 
 .tooltip-triangle{
     position: absolute;
-    content: url(../images/tooltip-triangle.png);
+    display: block;
+    background: url(../images/tooltip-triangle.png);
     top: 0;
     right: 300px;
+    width: 16px;
+    height: 16px;
 }
 
 .filters-container .filters-btn + .filters-box {
@@ -210,8 +213,11 @@
 }
 
 .search-icon{
-	content: url('../images/search-icon.png');
+	background: url('../images/search-icon.png');
     cursor: pointer;
+    display: inline-block;
+    height: 20px;
+    width: 20px;
 }
 
 .search-button{
