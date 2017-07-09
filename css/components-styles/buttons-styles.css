@@ -1,3 +1,7 @@
+button{
+	outline: 0;
+}
+
 .primary-btn{
 	width: 120px;
 	height: 35px;
