@@ -35,8 +35,8 @@
 }
 
 .product-name{
-	max-height: 45px;
-	overflow: auto;
+	max-height: 50px;
+	overflow: hidden;
 	font-size: 18px;
 	font-weight: bold;
 	margin: 15px 0;
@@ -244,10 +244,6 @@
 
 	.product-tile .product-details{
 		height: 180px;
-	}
-
-	.product-tile .product-name{
-		height: 40px;
 	}
 }
 
