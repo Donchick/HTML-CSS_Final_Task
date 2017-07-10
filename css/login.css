@@ -55,6 +55,10 @@ main{
     background-size: 20px 20px;
 }
 
+.username-input:invalid{
+	border: 3px solid #ff0000;
+}	
+
 .username-input:focus,
 .password-input:focus{
 	border: 3px solid rgba(41, 136, 121, 0.4);
