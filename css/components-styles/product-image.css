@@ -16,9 +16,7 @@
 	text-align: left;
 }
 
-
-.gold-star{
-    background: url(../../images/gold-star.png);
+.rating-start{
     width: 16px;
     height: 16px;
     display: inline-block;
@@ -26,11 +24,10 @@
     margin: 7px 2px;
 }
 
+.gold-star{
+    background: url(../../images/gold-star.png);
+}
+
 .star{
 	background: url('../../images/star.png');
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-	margin: 0 2px;
-    margin: 7px 2px;
 }

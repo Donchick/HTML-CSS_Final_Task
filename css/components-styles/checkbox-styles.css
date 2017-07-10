@@ -1,11 +1,8 @@
-/* Hide original checkbox */
 .checkbox {
   position: absolute;
   opacity: 0;
 }
 
-/* Это для всех браузеров, кроме совсем старых, которые не поддерживают
-селекторы с плюсом. Показываем, что label кликабелен. */
 .checkbox + label {
   cursor: pointer;
   outline: 0;
@@ -24,7 +21,6 @@
   height: 22px;
 }
 
-/* checkbox background */
 .checkbox + label:before {
   left: 0;
   width: 48px;
@@ -32,7 +28,7 @@
   border-radius: 13px;
   border: 1px solid #2f897a;
 }
-/* checkbox-switcher */
+
 .checkbox + label:after {
   top: 2px;
   left: 26px;
