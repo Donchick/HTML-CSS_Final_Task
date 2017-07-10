@@ -1,0 +1,16 @@
+.modal-open.success-purchase:checked ~ .modal-wrap.success-purchase:before,
+.modal-open.edit-product:checked ~ .modal-wrap.edit-product:before,
+.modal-open.delete-product:checked ~ .modal-wrap.delete-product:before {
+    display: block;
+}
+
+.modal-open.success-purchase:checked ~ .modal-wrap.success-purchase .modal-dialog,
+.modal-open.edit-product:checked ~ .modal-wrap.edit-product .modal-dialog,
+.modal-open.delete-product:checked ~ .modal-wrap.delete-product .modal-dialog {
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    visibility: visible;
+    opacity: 1;
+}

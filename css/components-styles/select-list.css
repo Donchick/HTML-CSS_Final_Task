@@ -4,6 +4,11 @@
     background-image: url(../../images/white-select-link.png);
 }
 
+.white{
+    background: #ffffff;
+    background-image: url(../../images/green-select-link.png);
+}
+
 .select-list{
     width: 237px;
     height: 35px;

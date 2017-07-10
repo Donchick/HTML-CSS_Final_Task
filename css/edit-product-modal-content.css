@@ -1,0 +1,136 @@
+.edit-product-modal .modal-header p{
+	width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.edit-product-modal .modal-body{
+	height: calc(100% - 121px);
+	padding: 30px; 
+}
+
+.edit-product-modal .modal-content{
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	width: 100%;
+	height: calc(100% - 70px);
+}
+
+.edit-product-modal .product-desc-block,
+.edit-product-modal .product-params-block{
+	width: 48%;
+}
+
+.edit-product-modal .cancel-edit-btn,
+.edit-product-modal .edit-product-btn{
+	display: inline-block;
+    width: 170px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.edit-product-modal .cancel-edit-btn{
+	margin-right: 20px;
+}
+
+.edit-product-modal .desc-block,
+.edit-product-modal .param-block{
+	width: 100%;
+	margin-top: 20px;
+	text-align: left;
+}
+
+.edit-product-modal .product-name-input,
+.edit-product-modal .link-to-image,
+.edit-product-modal .product-price-input{
+	height: 35px;
+	width: calc(100% - 20px);
+	border-radius: 5px;
+	border: none;
+	outline: 0;
+	font-size: 14px;
+	padding: 0 10px;
+}
+
+.edit-product-modal .product-name-input:focus,
+.edit-product-modal .link-to-image:focus,
+.edit-product-modal .product-price-input:focus{
+	border: 1px solid rgba(41, 136, 121, 0.4);
+}
+
+.product-desc-block .title,
+.product-params-block .title{
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+
+.product-desc-block .category-select-list,
+.product-params-block .product-rating-list{
+	height: 35px;
+	border: none;
+	width: 100%;
+}
+
+.gender-type.desc-block{
+	font-size: 14px;
+}
+
+.desc-block.product-description{
+	height: calc(100% - 230px);
+	margin-bottom: 0;
+}
+
+.product-description .product-decs-input{
+	width: calc(100% - 20px);
+	height: calc(100% - 25px);
+	border-radius: 5px;
+	border: none;
+	outline: 0;
+	font-size: 14px;
+	padding: 0 10px;
+	resize: none;
+}
+
+.image-preview{
+	width: 100%;
+	margin-top: 10px;
+	border: 1px solid #ffffff;
+}
+
+@media (max-width: 800px) {
+	.edit-product-modal .modal-body{
+		height: auto;
+		padding: 0 30px;
+	}
+
+	.edit-product-modal .modal-content{
+		flex-flow: column nowrap;
+		justify-content: none;
+	}
+
+	.edit-product-modal .product-desc-block,
+	.edit-product-modal .product-params-block{
+		width: 100%;
+	}
+
+	.image-preview{
+		width: auto;
+		max-height: 200px;
+	}
+
+	.buttons-block{
+		position: static;;
+		text-align: center;
+		padding: 20px 0;
+	}
+
+	.edit-product-modal .desc-block,
+	.edit-product-modal .param-block{
+		margin-top: 10px;
+		text-align: left;
+	}
+}

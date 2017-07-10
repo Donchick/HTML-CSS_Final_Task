@@ -10,7 +10,7 @@
 }
 
 .modal-body{
-	background: #fdfdfd url('../../images/product-tile-background.png');
+	background: #ecebe9 url('../../images/product-tile-background.png');
 	padding: 50px 30px 30px;
 	position: relative;
 	border-bottom-right-radius: 5px;
@@ -46,8 +46,7 @@
 }
 
 /* активация слоя затемнения и модального блока */
-.modal-open:checked ~ .modal-wrap:before,
-.modal-open:checked ~ .modal-wrap .modal-overlay {
+.modal-open.checkbox-name:checked ~ .modal-wrap.checkbox-name:before {
     display: block;
 }
 
@@ -55,7 +54,7 @@
     filter: blur(2px);
 }
 
-.modal-open:checked ~ .modal-wrap .modal-dialog {
+.modal-open.checkbox-name:checked ~ .modal-wrap.checkbox-name .modal-dialog {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
