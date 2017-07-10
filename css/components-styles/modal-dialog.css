@@ -24,7 +24,7 @@
 }
 
 /* слой затемнения */
-.modal-wrap:before {
+.modal-wrap::before {
     content: "";
     display: none;
     background: rgba(0, 0, 0, .3);
@@ -46,7 +46,7 @@
 }
 
 /* активация слоя затемнения и модального блока */
-.modal-open.checkbox-name:checked ~ .modal-wrap.checkbox-name:before {
+.modal-open.checkbox-name:checked ~ .modal-wrap.checkbox-name::before {
     display: block;
 }
 

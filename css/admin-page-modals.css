@@ -1,6 +1,6 @@
-.modal-open.success-purchase:checked ~ .modal-wrap.success-purchase:before,
-.modal-open.edit-product:checked ~ .modal-wrap.edit-product:before,
-.modal-open.delete-product:checked ~ .modal-wrap.delete-product:before {
+.modal-open.success-purchase:checked ~ .modal-wrap.success-purchase::before,
+.modal-open.edit-product:checked ~ .modal-wrap.edit-product::before,
+.modal-open.delete-product:checked ~ .modal-wrap.delete-product::before {
     display: block;
 }
 

@@ -5,10 +5,10 @@
     margin: 10px 0;
 }
 
-.noUi-handle.noUi-handle-lower:before,
-.noUi-handle.noUi-handle-lower:after,
-.noUi-handle.noUi-handle-upper:before,
-.noUi-handle.noUi-handle-upper:after{
+.noUi-handle.noUi-handle-lower::before,
+.noUi-handle.noUi-handle-lower::after,
+.noUi-handle.noUi-handle-upper::before,
+.noUi-handle.noUi-handle-upper::after{
 	display: none;
 }
 
