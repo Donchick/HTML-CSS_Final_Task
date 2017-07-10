@@ -37,8 +37,6 @@ main{
 
 .product-block{
 	width: calc(100% - 60px);
-	height: auto;
-	font-size: 0px;
 	background: #fdfdfd url('../images/product-tile-background.png');
 	padding: 30px;
 	display: flex;
@@ -49,7 +47,6 @@ main{
 .product-block .product-img,
 .product-block .product-details{
 	width: 49%;
-	font-size: 14px;
 	position: relative;
 }
 
@@ -82,16 +79,12 @@ main{
 	position: absolute;
 	bottom: 0;
 	right: 0;
+	line-height: 35px;
+	text-align: center;
 }
 
 .product-price .currency{
 	color: #016501;
-}
-
-.product-tile .show-more{
-	position: absolute;
-	bottom: 20px;
-	right: 20px;
 }
 
 .product-details hr{
@@ -104,6 +97,25 @@ main{
 	font-weight: normal;
 	font-size: 16px;
 	margin-left: 5px;
+}
+
+.success-purcahse-modal .modal-body{
+	height: 120px;
+}
+
+.success-purcahse-modal .cont-shopping-btn{
+	position: absolute;
+	bottom: 30px;
+	right: 30px;
+    width: 220px;
+    height: 50px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.success-purcahse-modal {
+    width: 700px;
 }
 
 @media (max-width: 800px) {
@@ -131,5 +143,10 @@ main{
 
 	.buy-product-btn{
 		float: right;
+	}
+
+	.success-purcahse-modal{
+	    max-width: 540px;
+	    width: 100%;
 	}
 }

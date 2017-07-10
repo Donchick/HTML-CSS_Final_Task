@@ -4,9 +4,10 @@
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="./css/reset_css.css">
 		<link rel="stylesheet" href="./css/layout.css">
-		<link rel="stylesheet" href="./css/product_customer.css">
 		<link rel="stylesheet" href="./css/components-styles/buttons-styles.css">
 		<link rel="stylesheet" href="./css/components-styles/product-image.css">
+		<link rel="stylesheet" href="./css/components-styles/modal-dialog.css">
+		<link rel="stylesheet" href="./css/product_customer.css">
 	</head>
 	<body>
 		<header>
@@ -16,6 +17,7 @@
 				<i class="logout-icon"></i>
 			</div>
 		</header>
+		<input class="modal-open" id="success_purchased_modal" type="checkbox" hidden data-toggle="success_purchased_modal">
 		<main>
 			<div class="navigation-bar">
 				<span class="back-link navigation-link"><a href="/">Back</a></span>
@@ -41,12 +43,23 @@
 							maiores sit nulla officiis.
 						</p>
 						<span class="product-price"><i class="currency">$</i>716.45<span class="product-qty">(10 items left)</span></span>
-						<button class="primary-btn buy-product-btn">Buy</button>
+						<label for="success_purchased_modal" class="primary-btn buy-product-btn">Buy</label>
 					</div>	
 				</div>
 		</main>
 		<footer>
 			Copyright “Demo Shop”, 2017
 		</footer>
+		<div class="modal-wrap" aria-hidden="true" role="dialog">
+			<div class="success-purcahse-modal modal-dialog">
+				<div class="modal-header">
+					Thank you!
+				</div>
+				<div class="modal-body">
+					<p class="modal-content">You successfully purchased this item.</p>
+					<label for="success_purchased_modal" class="primary-btn cont-shopping-btn">Continue shopping</label>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
