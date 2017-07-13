@@ -50,7 +50,7 @@
     display: block;
 }
 
-.modal-open:checked ~ main{
+.modal-open:checked ~ .body{
     filter: blur(2px);
 }
 
