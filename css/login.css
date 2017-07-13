@@ -1,7 +1,5 @@
-main{
-	height: 100%;
-	max-width: 100%;
-	padding: 0;
+.body{
+	filter: blur(2px);
 }
 
 .login-block{
@@ -21,6 +19,7 @@ main{
 	font-size: 22px;
 	font-weight: 700;
 	vertical-align: middle;
+	font-family: PT Sans Caption;
 }
 
 .login-block .login-form{

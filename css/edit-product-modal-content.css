@@ -8,6 +8,7 @@
 .edit-product-modal .modal-body{
 	height: calc(100% - 121px);
 	padding: 30px; 
+    box-shadow: inset 0px 2px 0px rgba(0,0,0, 0.1);
 }
 
 .edit-product-modal .modal-content{
@@ -50,22 +51,28 @@
 	height: 35px;
 	width: calc(100% - 20px);
 	border-radius: 5px;
-	border: none;
+	border: 1px solid rgba(0,0,0,0);
 	outline: 0;
 	font-size: 14px;
 	padding: 0 10px;
+	font-family: PT Sans;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .edit-product-modal .product-name-input:focus,
 .edit-product-modal .link-to-image:focus,
-.edit-product-modal .product-price-input:focus{
+.edit-product-modal .product-price-input:focus,
+.edit-product-modal .product-decs-input:focus{
 	border: 1px solid rgba(41, 136, 121, 0.4);
 }
 
 .product-desc-block .title,
 .product-params-block .title{
-	font-size: 14px;
-	margin-bottom: 5px;
+	font-size: 16px;
+	margin-bottom: 10px;
+	display: block;
 }
 
 .product-desc-block .category-select-list,
@@ -80,18 +87,18 @@
 }
 
 .desc-block.product-description{
-	height: calc(100% - 230px);
+	height: calc(100% - 253px);
 	margin-bottom: 0;
 }
 
 .product-description .product-decs-input{
-	width: calc(100% - 20px);
-	height: calc(100% - 25px);
+	width: calc(100% - 22px);
+	height: calc(100% - 62px);
 	border-radius: 5px;
-	border: none;
+	border: 1px solid rgba(0,0,0,0);
 	outline: 0;
 	font-size: 14px;
-	padding: 0 10px;
+	padding: 15px 10px;
 	resize: none;
 }
 
