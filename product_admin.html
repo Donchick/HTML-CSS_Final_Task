@@ -15,22 +15,23 @@
 		<link rel="stylesheet" href="./css/edit-product-modal-content.css">
 	</head>
 	<body>
-		<header>
-			<div class="header-menu">
-				<i class="bag-icon"></i>
-				<span class="user-greet">Hello, <i>Donat Travin</i></span>
-				<i class="logout-icon"></i>
-			</div>
-		</header>
 		<input class="modal-open success-purchase" id="success_purchased_modal" type="checkbox" hidden>
 		<input class="modal-open delete-product" id="delete_product_modal" type="checkbox" hidden>
 		<input class="modal-open edit-product" id="edit_product_modal" type="checkbox" hidden>
-		<main>
-			<div class="navigation-bar">
-				<span class="back-link navigation-link"><a href="/">Back</a></span>
-				<span class="category-path navigation-link">Category: <a href="/">Man / Acive wear</a></span>
-			</div>
-			<div class="product-block">
+		<div class="body">
+			<header>
+				<div class="header-menu">
+					<i class="bag-icon"></i>
+					<span class="user-greet">Hello, <i>Donat Travin</i></span>
+					<i class="logout-icon"></i>
+				</div>
+			</header>
+			<main>
+				<div class="navigation-bar">
+					<span class="back-link navigation-link"><a href="/">Back</a></span>
+					<span class="category-path navigation-link">Category: <a href="/">Man / Acive wear</a></span>
+				</div>
+				<div class="product-block">
 					<div class="product-img">
 						<img src="images/product-2.png">
 						<div class="product-rating">
@@ -60,10 +61,11 @@
 						<label for="success_purchased_modal" class="btn primary-btn buy-product-btn">Buy</label>
 					</div>	
 				</div>
-		</main>
-		<footer>
-			Copyright “Demo Shop”, 2017
-		</footer>
+			</main>
+			<footer>
+				Copyright “Demo Shop”, 2017
+			</footer>
+		</div>
 		<div class="modal-wrap delete-product" aria-hidden="true" role="dialog">
 			<div class="delete-product-modal modal-dialog">
 				<div class="modal-header">

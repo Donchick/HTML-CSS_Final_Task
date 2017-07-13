@@ -15,211 +15,213 @@
   		<script src="./libraries/nouislider.min.js"></script> 
 	</head>
 	<body>
-		<header>
-			<div class="header-menu">
-				<i class="bag-icon"></i>
-				<span class="user-greet">Hello, <i>Donat Travin</i></span>
-				<i class="logout-icon"></i>
-			</div>
-		</header>
-		<main>
-			<div class="filters-container">
-				<button class="btn primary-btn filters-btn">
-					Filter options
-				</button>
-				<div class="filters-box">
-						<i class="tooltip-triangle"></i>
-						<div class="filters">
-							<div class="product-params-filters">
-								<div class="availability-filter filter">
-									<span class="filter-title">Availability:</span><br>
-									<input type="checkbox" class="checkbox" id="checkbox" />
-									<label for="checkbox">Available only</label>
+		<div class="body">
+			<header>
+				<div class="header-menu">
+					<i class="bag-icon"></i>
+					<span class="user-greet">Hello, <i>Donat Travin</i></span>
+					<i class="logout-icon"></i>
+				</div>
+			</header>
+			<main>
+				<div class="filters-container">
+					<button class="btn primary-btn filters-btn">
+						Filter options
+					</button>
+					<div class="filters-box">
+							<i class="tooltip-triangle"></i>
+							<div class="filters">
+								<div class="product-params-filters">
+									<div class="availability-filter filter">
+										<span class="filter-title">Availability:</span><br>
+										<input type="checkbox" class="checkbox" id="checkbox" />
+										<label for="checkbox">Available only</label>
+									</div>
+									<div class="gender-filter filter">
+										<span class="filter-title">Gender:</span><br>
+										<input type="radio" class="radio" name="gender" value="male" id="male">
+										<label for="male">Man</label>
+										<input type="radio" name="gender" class="radio" value="female" id="female">
+										<label for="female">Woman</label>
+										<input type="radio" name="gender" class="radio" value="other" id="other">
+										<label for="other">Unisex</label>
+									</div>
+									<div class="category-filter filter">
+										<span class="filter-title">Category:</span><br>
+										<select class="select-list category-select-list green">
+											<option value="jeans">Jeans</option>
+											<option value="shirts">Shirts</option>
+											<option value="shoes">Shoes</option>
+											<option value="accessories">Accessories</option>
+										</select>
+									</div>
 								</div>
-								<div class="gender-filter filter">
-									<span class="filter-title">Gender:</span><br>
-									<input type="radio" class="radio" name="gender" value="male" id="male">
-									<label for="male">Man</label>
-									<input type="radio" name="gender" class="radio" value="female" id="female">
-									<label for="female">Woman</label>
-									<input type="radio" name="gender" class="radio" value="other" id="other">
-									<label for="other">Unisex</label>
-								</div>
-								<div class="category-filter filter">
-									<span class="filter-title">Category:</span><br>
-									<select class="select-list category-select-list green">
-										<option value="jeans">Jeans</option>
-										<option value="shirts">Shirts</option>
-										<option value="shoes">Shoes</option>
-										<option value="accessories">Accessories</option>
-									</select>
+								<div class="product-range-filters">
+									<div class="rating-filter filter">
+										<span class="filter-title">Rating:</span><br>
+										<div id="ratingSlider" class="slider rating-slider"></div>
+									</div>
+									<div class="price-filter filter">	
+										<span class="filter-title">Price:</span><br>
+										<div id="priceSlider" class="slider price-slider"></div>
+									</div>
 								</div>
 							</div>
-							<div class="product-range-filters">
-								<div class="rating-filter filter">
-									<span class="filter-title">Rating:</span><br>
-									<div id="ratingSlider" class="slider rating-slider"></div>
-								</div>
-								<div class="price-filter filter">	
-									<span class="filter-title">Price:</span><br>
-									<div id="priceSlider" class="slider price-slider"></div>
-								</div>
+						</div>
+					<input type="search" class="searchbar" placeholder="Filter by text..."><!--
+					--><button class="search-button" type="submit"><i class="search-icon"></i></button>
+				</div>
+				<div class="products-list">
+					<div class="product-tile">
+						<div class="product-img">
+							<img src="images/product-1.png">
+							<div class="product-rating">
+								<i class="gold-star ating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
 							</div>
 						</div>
-					</div>
-				<input type="search" class="searchbar" placeholder="Filter by text..."><!--
-				--><button class="search-button" type="submit"><i class="search-icon"></i></button>
-			</div>
-			<div class="products-list">
-				<div class="product-tile">
-					<div class="product-img">
-						<img src="images/product-1.png">
-						<div class="product-rating">
-							<i class="gold-star ating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
+						<div class="product-details">
+							<p class="product-name">Active Coat Lorem 1</p>
+							<p class="product-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Adipisci aperiam, libero aliquid architecto ad quis 
+								maiores sit nulla officiis ex velit sapiente autem fugit 
+								quam, qui reprehenderit veniam.
+							</p>
+							<span class="product-price"><i class="currency">$</i>76.55</span>
+							<button class="btn primary-btn show-more">Show more</button>
 						</div>
 					</div>
-					<div class="product-details">
-						<p class="product-name">Active Coat Lorem 1</p>
-						<p class="product-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
-							elit. Adipisci aperiam, libero aliquid architecto ad quis 
-							maiores sit nulla officiis ex velit sapiente autem fugit 
-							quam, qui reprehenderit veniam.
-						</p>
-						<span class="product-price"><i class="currency">$</i>76.55</span>
-						<button class="btn primary-btn show-more">Show more</button>
+					<div class="product-tile">
+						<div class="product-img">
+							<img src="images/product-2.png">
+							<div class="product-rating">
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
+							</div>
+						</div>
+						<div class="product-details">
+							<p class="product-name">Active Coat Lorem 2</p>
+							<p class="product-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Adipisci aperiam, libero aliquid architecto ad quis 
+								maiores sit nulla officiis.
+							</p>
+							<span class="product-price"><i class="currency">$</i>716.45</span>
+							<button class="btn primary-btn show-more">Show more</button>
+						</div>	
 					</div>
-				</div>
-				<div class="product-tile">
-					<div class="product-img">
-						<img src="images/product-2.png">
-						<div class="product-rating">
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
+					<div class="product-tile">
+						<div class="product-img">
+							<img src="images/product-3.png">
+							<div class="product-rating">
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="star rating-start"></i>
+							</div>
+						</div>
+						<div class="product-details">
+							<p class="product-name">
+								Active Coat Lorem Ipsum Dolor Sit Amet
+								Consectetur Adipisicing Elit.3
+							</p>
+							<p class="product-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Adipisci aperiam, libero aliquid architecto ad quis 
+								maiores sit nulla officiis ex velit sapientereer ergervwvr
+								 rgergergouegi uergiuerbui
+								ejhrb vierbv erbvyerv iyebvyeuvy ervbeuyv autem fugit 
+								quam, qui reprehenderit veniam.
+							</p>
+							<span class="product-price"><i class="currency">$</i>7216.55</span>
+							<button class="btn primary-btn show-more">Show more</button>
 						</div>
 					</div>
-					<div class="product-details">
-						<p class="product-name">Active Coat Lorem 2</p>
-						<p class="product-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
-							elit. Adipisci aperiam, libero aliquid architecto ad quis 
-							maiores sit nulla officiis.
-						</p>
-						<span class="product-price"><i class="currency">$</i>716.45</span>
-						<button class="btn primary-btn show-more">Show more</button>
-					</div>	
-				</div>
-				<div class="product-tile">
-					<div class="product-img">
-						<img src="images/product-3.png">
-						<div class="product-rating">
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="star rating-start"></i>
+					<div class="product-tile">
+						<div class="product-img">
+							<img src="images/product-4.png">
+							<div class="product-rating">
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+							</div>
+						</div>
+						<div class="product-details">
+							<p class="product-name">Active Coat Lorem 1</p>
+							<p class="product-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Adipisci aperiam, libero aliquid architecto ad quis 
+								maiores sit nulla officiis ex velit sapiente autem fugit 
+								quam, qui reprehenderit veniam fugiat.
+							</p>
+							<span class="product-price"><i class="currency">$</i>7.55</span>
+							<button class="btn primary-btn show-more">Show more</button>
 						</div>
 					</div>
-					<div class="product-details">
-						<p class="product-name">
-							Active Coat Lorem Ipsum Dolor Sit Amet
-							Consectetur Adipisicing Elit.3
-						</p>
-						<p class="product-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
-							elit. Adipisci aperiam, libero aliquid architecto ad quis 
-							maiores sit nulla officiis ex velit sapientereer ergervwvr
-							 rgergergouegi uergiuerbui
-							ejhrb vierbv erbvyerv iyebvyeuvy ervbeuyv autem fugit 
-							quam, qui reprehenderit veniam.
-						</p>
-						<span class="product-price"><i class="currency">$</i>7216.55</span>
-						<button class="btn primary-btn show-more">Show more</button>
-					</div>
-				</div>
-				<div class="product-tile">
-					<div class="product-img">
-						<img src="images/product-4.png">
-						<div class="product-rating">
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
+					<div class="product-tile">
+						<div class="product-img">
+							<img src="images/product-5.png">
+							<div class="product-rating">
+								<i class="gold-star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
+							</div>
+						</div>
+						<div class="product-details">
+							<p class="product-name">Active Coat Lorem 2</p>
+							<p class="product-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Adipisci aperiam, libero aliquid architecto ad quis 
+								maiores sit nulla officiis.
+							</p>
+							<span class="product-price"><i class="currency">$</i>76.55</span>
+							<button class="btn primary-btn show-more">Show more</button>
 						</div>
 					</div>
-					<div class="product-details">
-						<p class="product-name">Active Coat Lorem 1</p>
-						<p class="product-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
-							elit. Adipisci aperiam, libero aliquid architecto ad quis 
-							maiores sit nulla officiis ex velit sapiente autem fugit 
-							quam, qui reprehenderit veniam fugiat.
-						</p>
-						<span class="product-price"><i class="currency">$</i>7.55</span>
-						<button class="btn primary-btn show-more">Show more</button>
-					</div>
-				</div>
-				<div class="product-tile">
-					<div class="product-img">
-						<img src="images/product-5.png">
-						<div class="product-rating">
-							<i class="gold-star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
+					<div class="product-tile">
+						<div class="product-img">
+							<img src="images/product-6.png">
+							<div class="product-rating">
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="gold-star rating-start"></i>
+								<i class="star rating-start"></i>
+								<i class="star rating-start"></i>
+							</div>
+						</div>
+						<div class="product-details">
+							<p class="product-name">
+								Active Coat Lorem Ipsum Dolor Sit Amet
+								Consectetur Adipisicing Elit.3
+							</p>
+							<p class="product-description">
+								Lorem ipsum dolor sit amet, consectetur adipisicing 
+								elit. Adipisci aperiam, libero aliquid architecto ad quis 
+								maiores sit nulla officiis ex velit sapiente autem fugit 
+								quam, qui reprehenderit veniam fugiat.
+							</p>
+							<span class="product-price"><i class="currency">$</i>6.55</span>
+							<button class="btn primary-btn show-more">Show more</button>
 						</div>
 					</div>
-					<div class="product-details">
-						<p class="product-name">Active Coat Lorem 2</p>
-						<p class="product-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
-							elit. Adipisci aperiam, libero aliquid architecto ad quis 
-							maiores sit nulla officiis.
-						</p>
-						<span class="product-price"><i class="currency">$</i>76.55</span>
-						<button class="btn primary-btn show-more">Show more</button>
-					</div>
 				</div>
-				<div class="product-tile">
-					<div class="product-img">
-						<img src="images/product-6.png">
-						<div class="product-rating">
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="gold-star rating-start"></i>
-							<i class="star rating-start"></i>
-							<i class="star rating-start"></i>
-						</div>
-					</div>
-					<div class="product-details">
-						<p class="product-name">
-							Active Coat Lorem Ipsum Dolor Sit Amet
-							Consectetur Adipisicing Elit.3
-						</p>
-						<p class="product-description">
-							Lorem ipsum dolor sit amet, consectetur adipisicing 
-							elit. Adipisci aperiam, libero aliquid architecto ad quis 
-							maiores sit nulla officiis ex velit sapiente autem fugit 
-							quam, qui reprehenderit veniam fugiat.
-						</p>
-						<span class="product-price"><i class="currency">$</i>6.55</span>
-						<button class="btn primary-btn show-more">Show more</button>
-					</div>
-				</div>
-			</div>
-		</main>
-		<footer>
-			Copyright “Demo Shop”, 2017
-		</footer>
+			</main>
+			<footer>
+				Copyright “Demo Shop”, 2017
+			</footer>
+		</div>
 	</body>
 	<script>
 		var ratingSlider = document.getElementById('ratingSlider');

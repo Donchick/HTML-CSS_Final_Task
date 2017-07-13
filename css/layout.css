@@ -3,11 +3,20 @@ html{
 }
 
 body{
-	background: url('../images/background.png');
 	margin: 0;
   	position: relative;
   	height: 100%;
 	font-family: PT Sans;
+}
+
+.body{
+	background: url('../images/background.png');
+	margin: 0;
+  	position: relative;
+	font-family: PT Sans;
+    display: flex;
+    flex-flow: column wrap;
+    min-height: 100%;
 }
 
 header, footer{
@@ -19,11 +28,14 @@ header, footer{
 
 header{
 	border-bottom: 3px solid #2cad69;
+    width: 100%;
+    align-self: flex-start;
 }
 
 footer{
 	width: 100%;
 	text-align: center;
+    align-self: flex-end;	
 }
 
 main{
@@ -32,7 +44,8 @@ main{
 	margin: 0 auto;
 	max-width: 1140px;
 	background: rgba(0,0,0, 0.4);
-	min-height: calc(100% - 150px);
+	min-height: calc(100% - 153px);
+	flex-grow: 99;
 }
 
 .header-menu{
