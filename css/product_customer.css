@@ -38,7 +38,7 @@ main{
 .product-block{
 	width: calc(100% - 60px);
 	background: #fdfdfd url('../images/product-tile-background.png');
-	padding: 30px;
+	padding: 20px 20px 25px;
 	display: flex;
 	flex-flow: row nowrap;
 	justify-content: space-between;
@@ -64,7 +64,7 @@ main{
 	overflow: hidden;
 	font-size: 18px;
 	font-weight: bold;
-	padding-bottom: 15px;
+	padding: 5px 0 15px;
 	border-bottom: 2px solid #4fc19a;
 }
 
@@ -123,6 +123,7 @@ main{
 @media (max-width: 800px) {
 	.product-block{
 		flex-flow: column nowrap;
+		padding: 20px;
 	}
 
 	.product-block .product-img,
