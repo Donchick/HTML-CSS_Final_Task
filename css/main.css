@@ -23,7 +23,7 @@
 }
 
 .product-details{
-	margin: 15px 20px;
+	margin: 0 20px;
 	height: 208px;
 	text-align: center;
 }
@@ -34,6 +34,7 @@
 	font-size: 14px;
 	text-align: left;
 	margin: 15px 0;
+    line-height: 16px;
 }
 
 .product-name{
@@ -41,7 +42,9 @@
 	overflow: hidden;
 	font-size: 18px;
 	font-weight: bold;
-	margin: 15px 0;
+	padding: 15px 0;
+	text-align: left;
+	border-bottom: 2px solid #4fc19a;
 }
 
 .product-price{
@@ -54,7 +57,7 @@
 }
 
 .product-price .currency{
-	color: #016501;
+	color: #288575;
 }
 
 .product-tile .show-more{
@@ -81,6 +84,7 @@
 
 .filters-container .filters-btn{
 	position: relative;
+	width: 140px;
 }
 
 .filters-container .filters-btn:hover{
@@ -92,7 +96,7 @@
     display: block;
     background: url(../images/tooltip-triangle.png);
     top: 0;
-    right: 300px;
+    right: 310px;
     width: 16px;
     height: 16px;
 }
@@ -144,7 +148,7 @@
 
 .filter{
 	font-size: 14px;
-	font-family: PTSans;
+	font-family: PT Sans;
 	text-align: left;
 	vertical-align: top;
 	display: inline-block;
@@ -181,7 +185,7 @@
 .filter-title{
 	font-size: 12px;
 	color: #000000;
-	font-family: PTSans;
+	font-family: PT Sans;
 	display: inline-block;
 }	
 
@@ -213,6 +217,7 @@
 .searchbar::placeholder{
 	font-style: italic;
 	font-family: PT Sans;
+	color: #999999;
 }
 
 .search-icon{
@@ -221,6 +226,10 @@
     display: inline-block;
     height: 20px;
     width: 20px;
+}
+
+.searchbar:focus ~ .search-button .search-icon{
+	background: url('../images/focused-search-icon.png');
 }
 
 .search-button{
