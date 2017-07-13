@@ -17,6 +17,10 @@ header, footer{
 	line-height: 50px;
 }
 
+header{
+	border-bottom: 3px solid #2cad69;
+}
+
 footer{
 	width: 100%;
 	text-align: center;
@@ -55,6 +59,10 @@ main{
 .user-greet, footer{
 	color: #FFFFFF;
 	font-size: 15px;
+}
+
+i{
+	font-style: italic;
 }
 
 @media (max-width: 1000px) {
