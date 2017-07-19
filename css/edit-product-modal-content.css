@@ -51,7 +51,7 @@
 	height: 35px;
 	width: calc(100% - 20px);
 	border-radius: 5px;
-	border: 1px solid rgba(0,0,0,0);
+	border: 3px solid rgba(0,0,0,0);
 	outline: 0;
 	font-size: 14px;
 	padding: 0 10px;
@@ -65,7 +65,7 @@
 .edit-product-modal .link-to-image:focus,
 .edit-product-modal .product-price-input:focus,
 .edit-product-modal .product-decs-input:focus{
-	border: 1px solid rgba(41, 136, 121, 0.4);
+	border: 3px solid rgba(41, 136, 121, 0.4);
 }
 
 .product-desc-block .title,
@@ -92,8 +92,8 @@
 }
 
 .product-description .product-decs-input{
-	width: calc(100% - 22px);
-	height: calc(100% - 62px);
+	width: calc(100% - 26px);
+	height: calc(100% - 66px);
 	border-radius: 5px;
 	border: 1px solid rgba(0,0,0,0);
 	outline: 0;

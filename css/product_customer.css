@@ -62,10 +62,10 @@ main{
 .product-name{
 	max-height: 50px;
 	overflow: hidden;
-	font-size: 18px;
+	font-size: 24px;
 	font-weight: bold;
 	padding: 5px 0 15px;
-	border-bottom: 2px solid #4fc19a;
+	border-bottom: 2px solid #2ec5cc;
 }
 
 .product-price{
