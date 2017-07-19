@@ -5,6 +5,9 @@
     text-align: left;
     height: 60px;
     line-height: 60px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-weight: bold;
     border-bottom: #eaeaea solid 1px;
     font-family: PT Sans Caption;
