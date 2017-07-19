@@ -55,7 +55,7 @@
 	outline: 0;
 	font-size: 14px;
 	padding: 0 10px;
-	font-family: PT Sans;
+	font-family: PT Sans, serif, sans-serif;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

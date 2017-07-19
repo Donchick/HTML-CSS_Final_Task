@@ -10,7 +10,7 @@
     text-overflow: ellipsis;
     font-weight: bold;
     border-bottom: #eaeaea solid 1px;
-    font-family: PT Sans Caption;
+    font-family: PT Sans Caption, serif, sans-serif;
 }
 
 .modal-body{

@@ -7,7 +7,7 @@
 main{
 	padding: 0 30px;
 	min-height: calc(100% - 100px);
-	font-family: PT Sans;
+	font-family: PT Sans, serif, sans-serif;
 }
 
 .navigation-bar{
