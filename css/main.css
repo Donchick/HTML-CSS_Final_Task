@@ -34,7 +34,7 @@
 	font-size: 14px;
 	text-align: left;
 	margin: 15px 0;
-    line-height: 16px;
+    line-height: 18px;
 }
 
 .product-name{
@@ -44,7 +44,7 @@
 	font-weight: bold;
 	padding: 15px 0;
 	text-align: left;
-	border-bottom: 2px solid #4fc19a;
+	border-bottom: 2px solid #2ec5cc;
 }
 
 .product-price{
@@ -88,7 +88,7 @@
 }
 
 .filters-container .filters-btn:hover{
-	background-image: linear-gradient(to top, #3fc6cc 0%, #278473 100%);
+	background: linear-gradient(to top, #3fc6cc 0%, #278473 100%);
 }
 
 .tooltip-triangle{
@@ -202,7 +202,7 @@
 	height: 35px;
 	width: 230px;
 	border-radius: 5px;
-	border: none;
+	border: 3px solid rgba(0, 0, 0, 0);
 	outline: 0;
 	vertical-align: top;
 	padding: 0 40px 0 15px;
@@ -230,6 +230,10 @@
 
 .searchbar:focus ~ .search-button .search-icon{
 	background: url('../images/focused-search-icon.png');
+}
+
+.searchbar:focus{
+	border: 3px solid rgba(41, 136, 121, 0.4);
 }
 
 .search-button{
