@@ -1,3 +1,9 @@
+@import url(./components-styles/select-list.css);
+@import url(./components-styles/radiobuttons-styles.css);
+@import url(./product_customer.css);
+@import url(./admin-page-modals.css);
+@import url(./edit-product-modal-content.css);
+
 .manager-links{
 	margin-top: 30px; 
 }

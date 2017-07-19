@@ -1,3 +1,12 @@
+@import url(./reset_css.css);
+@import url(./libraries/nouislider.min.css);
+@import url(./layout.css);
+@import url(./components-styles/radiobuttons-styles.css);
+@import url(./components-styles/buttons-styles.css);
+@import url(./components-styles/product-image.css);
+@import url(./components-styles/select-list.css);
+@import url(./components-styles/range-slider.css);
+@import url(./components-styles/checkbox-styles.css);
 /**
 	START
 	Products list and product tiles styles
