@@ -1,4 +1,4 @@
-/* Стили модального окна */
+/* Modal window styles */
 .modal-header{ 
     font-size: 22px; 
     padding: 0 40px;
@@ -28,7 +28,7 @@
 	text-align: center;
 }
 
-/* слой затемнения */
+/* shadow layer */
 .modal-wrap::before {
     content: "";
     display: none;
@@ -50,7 +50,7 @@
     z-index: 102;
 }
 
-/* активация слоя затемнения и модального блока */
+/* activating shadow layer */
 .modal-open.checkbox-name:checked ~ .modal-wrap.checkbox-name::before {
     display: block;
 }
@@ -67,7 +67,7 @@
     visibility: visible;
     opacity: 1;
 }
-/* элементы модального окна */
+
 .modal-dialog {
     background: #ffffff;
     border: none;
