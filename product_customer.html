@@ -38,7 +38,7 @@
 								maiores sit nulla officiis.
 							</div>
 							<span class="product-price"><i class="currency">$</i>716.45<span class="product-qty">(10 items left)</span></span>
-							<label for="success_purchased_modal" class="btn primary-btn buy-product-btn">Buy</label>
+							<button for="success_purchased_modal" class="btn primary-btn buy-product-btn modal-open-close-button">Buy</button>
 						</div>	
 					</div>
 			</main>
@@ -53,9 +53,23 @@
 				</div>
 				<div class="modal-body">
 					<p class="modal-content">You successfully purchased this item.</p>
-					<label for="success_purchased_modal" class="btn primary-btn cont-shopping-btn">Continue shopping</label>
+					<button for="success_purchased_modal" class="btn primary-btn cont-shopping-btn modal-open-close-button">Continue shopping</button>
 				</div>
 			</div>
 		</div>
 	</body>
+	<script type="text/javascript">
+		var modalDialogOpenCloseButtons = document.getElementsByClassName('modal-open-close-button');
+		for (var i=0; i < modalDialogOpenCloseButtons.length; i++) {
+			addModalButtonClickListener(modalDialogOpenCloseButtons[i]);
+		}
+
+		function addModalButtonClickListener (targetElement) {
+			targetElement.addEventListener('click', function () {
+				var checkboxId = targetElement.getAttribute('for');
+				var checkbox = document.getElementById(checkboxId);
+				checkbox.checked = !checkbox.checked;
+			});
+		}
+	</script>
 </html>
