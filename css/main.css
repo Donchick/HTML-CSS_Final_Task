@@ -1,5 +1,5 @@
 @import url(./reset_css.css);
-@import url(./libraries/nouislider.min.css);
+@import url(../libraries/nouislider.min.css);
 @import url(./layout.css);
 @import url(./components-styles/radiobuttons-styles.css);
 @import url(./components-styles/buttons-styles.css);
@@ -92,18 +92,25 @@
 }
 
 .filters-container .filters-btn{
-	position: relative;
-	width: 140px;
+    display: inline-block;
+    position: relative;
+    width: 140px;
+    text-align: center;
 }
 
-.filters-container .filters-btn:hover{
+.filters-container .filters-btn:hover,
+.filters-container .filters-btn.active-filters{
 	background: linear-gradient(to top, #3fc6cc 0%, #278473 100%);
 }
 
-.tooltip-triangle{
+.filters-container:has( button){
+	display: none;
+}
+
+.filters:before{
     position: absolute;
     display: block;
-    background: url(../images/tooltip-triangle.png);
+    content: url(../images/tooltip-triangle.png);
     top: 0;
     right: 310px;
     width: 16px;
@@ -274,13 +281,18 @@
 
 @media (max-width: 800px) {
 	.product-tile .product-description{
-		max-height: 50px;
+		height: auto;
 	}
 	
 	.products-list .product-tile{
 		width: 100%;
 		display: block;
 		height: auto;
+	}
+
+	.product-tile .product-details{
+		height: auto;
+		padding-bottom: 55px;
 	}
 
 	.filters-container .filters-btn{
@@ -319,7 +331,7 @@
     	margin-right: 19px;
 	}
 
-	.tooltip-triangle{
+	.filters:before{
 		left: 50px;
 	}
 

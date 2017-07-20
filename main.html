@@ -16,11 +16,10 @@
 			</header>
 			<main>
 				<div class="filters-container">
-					<button class="btn primary-btn filters-btn">
+					<label class="btn primary-btn filters-btn">
 						Filter options
-					</button>
+					</label>
 					<div class="filters-box">
-							<i class="tooltip-triangle"></i>
 							<div class="filters">
 								<div class="product-params-filters">
 									<div class="availability-filter filter">
@@ -254,6 +253,16 @@
 					return Math.floor(value);
 				}
 			}
+		});
+
+		var filtersBox = document.getElementsByClassName('filters-box')[0];
+		var filtersLabel = document.getElementsByClassName('filters-btn')[0];
+
+		filtersBox.addEventListener('mouseenter', function () {
+			filtersLabel.classList.add(['active-filters']);
+		});
+		filtersBox.addEventListener('mouseleave', function () {
+			filtersLabel.classList.remove(['active-filters']);
 		});
 	</script>
 </html>
